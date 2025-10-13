@@ -27,6 +27,7 @@ export interface Project {
   }
 }
 
+// FIX: Add and export the InProgressProject interface.
 export interface InProgressProject {
   id: number;
   title: string;

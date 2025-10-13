@@ -5,14 +5,14 @@ import PortfolioModal from './PortfolioModal';
 import { CompareArrowsIcon } from './icons/IconComponents';
 
 const portfolioData: Project[] = [
-  { id: 1, type: 'standard', title: 'YouTube Channel Intro', description: 'Dynamic 3D intro animation for a popular tech channel.', thumbnailUrl: 'https://picsum.photos/seed/project1/600/400', tools: ['Blender', 'After Effects'], videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', category: '3D Animation' },
-  { id: 2, type: 'standard', title: 'TikTok Dance VFX', description: 'Viral dance video enhanced with scroll-stopping visual effects.', thumbnailUrl: 'https://picsum.photos/seed/project2/600/400', tools: ['After Effects', 'Premiere Pro'], videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', category: 'VFX' },
+  { id: 1, type: 'standard', title: 'YouTube Channel Intro', description: 'Dynamic 3D intro animation for a popular tech channel.', thumbnailUrl: 'https://drive.google.com/uc?id=1X9k9dE-r0-sP_gI_h-U_yT_r_E_w_Q-lKj', tools: ['Blender', 'After Effects'], videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', category: '3D Animation' },
+  { id: 2, type: 'standard', title: 'TikTok Dance VFX', description: 'Viral dance video enhanced with scroll-stopping visual effects.', thumbnailUrl: 'https://drive.google.com/uc?id=1P0b1A_s-D_c_V-fG_h_J-k_L-m_N-o_Pq', tools: ['After Effects', 'Premiere Pro'], videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', category: 'VFX' },
   { 
     id: 3, 
     type: 'standard', 
     title: 'Corporate Explainer Video', 
     description: 'Clean 2D motion graphics video explaining a complex service.', 
-    thumbnailUrl: 'https://picsum.photos/seed/project3/600/400', 
+    thumbnailUrl: 'https://drive.google.com/uc?id=1_R_e_W-q_T_y_U-i_O_p_A-s_D-f_G-hJ', 
     tools: ['After Effects'], 
     videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', 
     category: '2D Animation',
@@ -32,8 +32,8 @@ const portfolioData: Project[] = [
     type: 'before-after', 
     title: 'Wedding Highlight Film', 
     description: 'Cinematic editing and color grading to create a warm, emotional tone for a wedding highlight film.', 
-    beforeImageUrl: 'https://picsum.photos/seed/project4-before/800/450', 
-    afterImageUrl: 'https://picsum.photos/seed/project4/800/450', 
+    beforeImageUrl: 'https://drive.google.com/uc?id=1-kL_j_I-h_G_f-E_d_C-b_A-z_Y_x-Wv', 
+    afterImageUrl: 'https://drive.google.com/uc?id=1-u_T-s_R_q-P_o_N-m_L-k_J_i_H-gF', 
     tools: ['Premiere Pro', 'DaVinci Resolve'], 
     videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', 
     category: 'Motion Graphics',
@@ -43,9 +43,9 @@ const portfolioData: Project[] = [
       result: "The final highlight film was delivered as a cherished cinematic keepsake. The 'before-and-after' comparison starkly demonstrates the transformative power of professional editing and color grading, turning raw footage into a polished, storytelling-driven piece.",
     }
   },
-  { id: 5, type: 'standard', title: 'Character Animation Short', description: 'A short story brought to life with expressive 2D character animation.', thumbnailUrl: 'https://picsum.photos/seed/project5/600/400', tools: ['After Effects', 'AI Tools'], videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', category: '2D Animation' },
-  { id: 6, type: 'standard', title: 'Social Media Ad Campaign', description: 'A series of short, punchy video ads for a new product launch.', thumbnailUrl: 'https://picsum.photos/seed/project6/600/400', tools: ['Premiere Pro', 'After Effects'], videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', category: 'Motion Graphics' },
-  { id: 7, type: 'standard', title: 'YouTube Channel Intro', description: 'Dynamic 3D intro animation for a popular tech channel.', thumbnailUrl: 'https://picsum.photos/seed/project1/600/400', tools: ['Blender', 'After Effects'], videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', category: '3D Animation' },
+  { id: 5, type: 'standard', title: 'Character Animation Short', description: 'A short story brought to life with expressive 2D character animation.', thumbnailUrl: 'https://drive.google.com/uc?id=1-eD_c_B_a-Z_y_X-w_V_u-T_s_R_q-PoN', tools: ['After Effects', 'AI Tools'], videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', category: '2D Animation' },
+  { id: 6, type: 'standard', title: 'Social Media Ad Campaign', description: 'A series of short, punchy video ads for a new product launch.', thumbnailUrl: 'https://drive.google.com/uc?id=1-m_L-k_J-i_H_g_F-e_D_c-B_a_Z_y-Xw', tools: ['Premiere Pro', 'After Effects'], videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', category: 'Motion Graphics' },
+  { id: 7, type: 'standard', title: 'YouTube Channel Intro', description: 'Dynamic 3D intro animation for a popular tech channel.', thumbnailUrl: 'https://drive.google.com/uc?id=1X9k9dE-r0-sP_gI_h-U_yT_r_E_w_Q-lKj', tools: ['Blender', 'After Effects'], videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', category: '3D Animation' },
 ];
 
 const containerVariants = {

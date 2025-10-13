@@ -1,9 +1,7 @@
 import React, { useEffect, useRef } from 'react';
-// FIX: Add Variants to framer-motion import to fix typing issues with transition properties.
 import { motion, useInView, animate, Variants } from 'framer-motion';
 import { BriefcaseIcon, CheckCircleIcon, ClockIcon, LocationMarkerIcon, TikTokIcon } from './icons/IconComponents';
 
-// FIX: Add Variants type to ensure correct type checking for animation properties.
 const sectionVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
@@ -17,7 +15,6 @@ const sectionVariants: Variants = {
   }
 };
 
-// FIX: Add Variants type for consistency and type safety.
 const itemVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 }
@@ -84,11 +81,13 @@ const About: React.FC = () => {
           <motion.div variants={itemVariants} className="lg:col-span-2">
             <div className="relative w-full max-w-xs mx-auto">
               <div className="absolute -inset-2.5 bg-gradient-to-r from-accent-start to-accent-end rounded-full blur-xl opacity-60 animate-pulse-slow"></div>
-              <img 
-                src="https://drive.google.com/file/d/1w4YOoGt_yvMCrVKSEMqO0ple-g08DWDD/view?usp=drive_link" 
-                alt="Binyam G." 
-                className="relative w-full h-full object-cover rounded-full border-4 border-secondary dark:border-[#11111F] shadow-lg"
-              />
+           <img 
+  src="https://i.imgur.com/B7qAtkF.jpeg" 
+  alt="Binyam G." 
+  className="relative w-full h-full object-cover rounded-full border-4 border-secondary dark:border-[#11111F] shadow-lg"
+/>
+
+
             </div>
           </motion.div>
           <motion.div variants={itemVariants} className="lg:col-span-3">

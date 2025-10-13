@@ -5,7 +5,6 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
-import InProgress from './components/InProgress';
 import Testimonials from './components/Testimonials';
 import AIQuoteEstimator from './components/AIQuoteEstimator';
 import Contact from './components/Contact';
@@ -14,7 +13,6 @@ import ScrollToTopButton from './components/ScrollToTopButton';
 import CustomCursor from './components/CustomCursor';
 import StickyNav from './components/StickyNav';
 import SplashScreen from './components/SplashScreen';
-import ClientLogos from './components/ClientLogos';
 import BehindTheScenes from './components/BehindTheScenes';
 import GearAndSetup from './components/GearAndSetup';
 import GeminiChatbot from './components/GeminiChatbot';
@@ -52,10 +50,8 @@ const App: React.FC = () => {
         <Portfolio />
         <BehindTheScenes />
         <GearAndSetup />
-        <InProgress />
         <ReferralBanner />
         <Testimonials />
-        <ClientLogos />
         <AIQuoteEstimator />
         <FAQ />
         <Contact />

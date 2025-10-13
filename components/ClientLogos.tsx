@@ -1,5 +1,4 @@
 import React from 'react';
-// FIX: Add Variants to framer-motion import to fix typing issues with transition properties.
 import { motion, Variants } from 'framer-motion';
 
 const GoogleLogo = () => (
@@ -26,7 +25,6 @@ const clients = [
     { name: 'Blender', logo: <BlenderLogo /> },
 ];
 
-// FIX: Add Variants type for consistency and type safety.
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
@@ -38,7 +36,6 @@ const containerVariants: Variants = {
   },
 };
 
-// FIX: Add Variants type to ensure correct type checking for animation properties.
 const itemVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: {

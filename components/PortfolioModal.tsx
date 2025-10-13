@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// FIX: Add Variants to framer-motion import to fix typing issues with transition properties.
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import type { Project } from '../types';
 import BeforeAfterSlider from './BeforeAfterSlider';
@@ -51,13 +50,11 @@ const PreviewContent: React.FC<{ project: Project }> = ({ project }) => {
 const CaseStudyContent: React.FC<{ caseStudy: Project['caseStudy'] }> = ({ caseStudy }) => {
     if (!caseStudy) return null;
 
-    // FIX: Add Variants type to ensure correct type checking for animation properties.
     const sectionVariants: Variants = {
         hidden: { opacity: 0, y: 20 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
     };
     
-    // FIX: Add Variants type to ensure correct type checking for animation properties.
     const iconVariants: Variants = {
         hidden: { scale: 0.5, opacity: 0, rotate: -30 },
         visible: { scale: 1, opacity: 1, rotate: 0, transition: { duration: 0.4, ease: 'easeOut', delay: 0.2 } },

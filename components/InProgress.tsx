@@ -2,27 +2,26 @@ import type { InProgressProject } from '../types';
 import React from 'react';
 import { motion } from 'framer-motion';
 
-// NOTE: Using static images as placeholders. Animated GIFs would be ideal for this section.
 const inProgressData: InProgressProject[] = [
   {
     id: 1,
     title: 'SaaS Product Explainer',
     description: 'Crafting a 60-second 2D motion graphics video to showcase new software features.',
-    previewUrl: 'https://picsum.photos/seed/wip1/600/400',
+    previewUrl: 'https://drive.google.com/uc?id=1_V_u_T-s_R-q_P_o_N_m_L_k_J_i_H-g_F',
     tools: ['After Effects', 'Illustrator'],
   },
   {
     id: 2,
     title: 'Music Video VFX',
     description: 'Adding dynamic energy effects and cleanups for an upcoming music video release.',
-    previewUrl: 'https://picsum.photos/seed/wip2/600/400',
+    previewUrl: 'https://drive.google.com/uc?id=1-eD_c-B_a_Z_y_X-w_V_u_T_s_R_q-p_O',
     tools: ['After Effects', 'Mocha Pro'],
   },
   {
     id: 3,
     title: '3D Logo Animation',
     description: 'Developing a cinematic 3D logo reveal for a new gaming studio launching next quarter.',
-    previewUrl: 'https://picsum.photos/seed/wip3/600/400',
+    previewUrl: 'https://drive.google.com/uc?id=1-n_M_l-K_j_I_h_G-f_E_d_C_b_A-z_Y_x',
     tools: ['Blender', 'Premiere Pro'],
   },
 ];

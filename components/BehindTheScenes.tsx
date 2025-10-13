@@ -7,19 +7,19 @@ const scenes = [
     id: 1,
     title: 'Complex VFX Timeline',
     description: 'Dozens of layers, masks, and effects come together in After Effects to create a single, seamless shot.',
-    imageUrl: 'https://picsum.photos/seed/bts1/600/400',
+    imageUrl: 'https://i.imgur.com/6wzJzrP.jpeg',
   },
   {
     id: 2,
     title: '3D Modeling in Blender',
     description: 'Building a custom 3D asset from scratch. This is the wireframe view before textures and lighting are applied.',
-    imageUrl: 'https://picsum.photos/seed/bts2/600/400',
+    imageUrl: 'https://i.imgur.com/fO22Q9d.png',
   },
   {
     id: 3,
     title: 'The Editing Suite',
     description: 'My dual-monitor setup, optimized for a fluid workflow between editing, effects, and color grading panels.',
-    imageUrl: 'https://picsum.photos/seed/bts3/600/400',
+    imageUrl: 'https://i.imgur.com/GQSc7ou.png',
   },
 ];
 

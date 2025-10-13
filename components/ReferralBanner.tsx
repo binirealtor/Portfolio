@@ -1,9 +1,7 @@
 import React from 'react';
-// FIX: Add Variants to framer-motion import to fix typing issues with transition properties.
 import { motion, Variants } from 'framer-motion';
 import { MegaphoneIcon } from './icons/IconComponents';
 
-// FIX: Add Variants type to ensure correct type checking for animation properties.
 const sectionVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
@@ -17,7 +15,6 @@ const sectionVariants: Variants = {
   }
 };
 
-// FIX: Add Variants type for consistency and type safety.
 const itemVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 }

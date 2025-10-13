@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
         muted
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
-        poster="https://picsum.photos/seed/hero-poster/1920/1080"
+        poster="https://drive.google.com/uc?id=1o5z2b-4hJ2V-5F-b_1z0L_hG_f_dC-bA"
       >
         {/* Using a placeholder video - replace with your showreel */}
         <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4" />
