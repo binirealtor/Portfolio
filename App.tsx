@@ -15,9 +15,9 @@ import StickyNav from './components/StickyNav';
 import SplashScreen from './components/SplashScreen';
 import BehindTheScenes from './components/BehindTheScenes';
 import GearAndSetup from './components/GearAndSetup';
-import GeminiChatbot from './components/GeminiChatbot';
 import FAQ from './components/FAQ';
 import ReferralBanner from './components/ReferralBanner';
+import UpworkProfile from './components/UpworkProfile';
 
 const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -52,6 +52,7 @@ const App: React.FC = () => {
         <GearAndSetup />
         <ReferralBanner />
         <Testimonials />
+        <UpworkProfile />
         <AIQuoteEstimator />
         <FAQ />
         <Contact />
@@ -59,7 +60,6 @@ const App: React.FC = () => {
       <Footer />
       <ScrollToTopButton />
       <StickyNav />
-      <GeminiChatbot />
     </div>
   );
 };

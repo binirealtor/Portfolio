@@ -103,8 +103,8 @@ const Contact: React.FC = () => {
         <motion.div variants={itemVariants} className="mt-16">
           <p className="text-text-secondary dark:text-[#94A3B8] mb-6">Or find me on:</p>
           <div className="flex justify-center items-center gap-6">
-            <a href="#" className="text-gray-400 hover:text-accent-start transition-colors duration-300 transform hover:scale-110" data-cursor-variant="link"><UpworkIcon /></a>
-            <a href="#" className="text-gray-400 hover:text-accent-start transition-colors duration-300 transform hover:scale-110" data-cursor-variant="link"><TikTokIcon /></a>
+            <a href="https://www.upwork.com/freelancers/~01edea4e134015fee8" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent-start transition-colors duration-300 transform hover:scale-110" data-cursor-variant="link"><UpworkIcon className="w-6 h-6" /></a>
+            <a href="#" className="text-gray-400 hover:text-accent-start transition-colors duration-300 transform hover:scale-110" data-cursor-variant="link"><TikTokIcon className="w-6 h-6" /></a>
             <a href="#" className="text-gray-400 hover:text-accent-start transition-colors duration-300 transform hover:scale-110" data-cursor-variant="link"><LinkedInIcon /></a>
             <a href="mailto:example@email.com" className="text-gray-400 hover:text-accent-start transition-colors duration-300 transform hover:scale-110" data-cursor-variant="link"><EmailIcon /></a>
           </div>

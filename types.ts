@@ -54,8 +54,3 @@ export interface Quote {
   timelineEstimate: string;
   assumptions: string;
 }
-
-export interface ChatMessage {
-  role: 'user' | 'model';
-  content: string;
-}
