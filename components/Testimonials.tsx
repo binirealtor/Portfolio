@@ -1,6 +1,7 @@
 import type { Testimonial } from '../types';
 import React from 'react';
-import { motion } from 'framer-motion';
+// FIX: Add Variants to framer-motion import to fix typing issues with transition properties.
+import { motion, Variants } from 'framer-motion';
 
 const testimonialsData: Testimonial[] = [
     { id: 1, quote: "Fast delivery, clean animation, scroll-stopping edits! Binyam is a true professional and a pleasure to work with.", author: 'Jane Doe', company: 'Tech Startup CEO' },
@@ -8,7 +9,8 @@ const testimonialsData: Testimonial[] = [
     { id: 3, quote: "Incredibly creative and attentive to feedback. He took our rough concept and turned it into a masterpiece. Highly recommend!", author: 'Emily White', company: 'Content Creator' },
 ];
 
-const containerVariants = {
+// FIX: Add Variants type for consistency and type safety.
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -18,7 +20,8 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+// FIX: Add Variants type to ensure correct type checking for animation properties.
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
     opacity: 1,

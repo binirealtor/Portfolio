@@ -1,5 +1,6 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+// FIX: Add Variants to framer-motion import to fix typing issues with transition properties.
+import { motion, Variants } from 'framer-motion';
 
 const GoogleLogo = () => (
     <svg className="w-full h-full" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Google</title><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.85 3.18-1.73 4.1-1.02 1.02-2.3 1.63-4.38 1.63-3.32 0-5.75-2.52-5.75-5.67s2.43-5.67 5.75-5.67c1.83 0 3.1.72 3.82 1.42l2.44-2.77C18.04 4.08 15.65 3 12.48 3c-5.21 0-9.4 4.22-9.4 9.42s4.19 9.42 9.4 9.42c2.58 0 4.84-.86 6.54-2.58 1.77-1.73 2.65-4.13 2.65-7.1v-1.7H12.48z"/></svg>
@@ -25,7 +26,8 @@ const clients = [
     { name: 'Blender', logo: <BlenderLogo /> },
 ];
 
-const containerVariants = {
+// FIX: Add Variants type for consistency and type safety.
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -36,7 +38,8 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+// FIX: Add Variants type to ensure correct type checking for animation properties.
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,

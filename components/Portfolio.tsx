@@ -45,6 +45,7 @@ const portfolioData: Project[] = [
   },
   { id: 5, type: 'standard', title: 'Character Animation Short', description: 'A short story brought to life with expressive 2D character animation.', thumbnailUrl: 'https://picsum.photos/seed/project5/600/400', tools: ['After Effects', 'AI Tools'], videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', category: '2D Animation' },
   { id: 6, type: 'standard', title: 'Social Media Ad Campaign', description: 'A series of short, punchy video ads for a new product launch.', thumbnailUrl: 'https://picsum.photos/seed/project6/600/400', tools: ['Premiere Pro', 'After Effects'], videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', category: 'Motion Graphics' },
+  { id: 7, type: 'standard', title: 'YouTube Channel Intro', description: 'Dynamic 3D intro animation for a popular tech channel.', thumbnailUrl: 'https://picsum.photos/seed/project1/600/400', tools: ['Blender', 'After Effects'], videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', category: '3D Animation' },
 ];
 
 const containerVariants = {

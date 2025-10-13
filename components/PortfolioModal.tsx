@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+// FIX: Add Variants to framer-motion import to fix typing issues with transition properties.
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 import type { Project } from '../types';
 import BeforeAfterSlider from './BeforeAfterSlider';
 import { PuzzlePieceIcon, LightBulbIcon, TrophyIcon } from './icons/IconComponents';
@@ -50,9 +51,16 @@ const PreviewContent: React.FC<{ project: Project }> = ({ project }) => {
 const CaseStudyContent: React.FC<{ caseStudy: Project['caseStudy'] }> = ({ caseStudy }) => {
     if (!caseStudy) return null;
 
-    const sectionVariants = {
+    // FIX: Add Variants type to ensure correct type checking for animation properties.
+    const sectionVariants: Variants = {
         hidden: { opacity: 0, y: 20 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
+    };
+    
+    // FIX: Add Variants type to ensure correct type checking for animation properties.
+    const iconVariants: Variants = {
+        hidden: { scale: 0.5, opacity: 0, rotate: -30 },
+        visible: { scale: 1, opacity: 1, rotate: 0, transition: { duration: 0.4, ease: 'easeOut', delay: 0.2 } },
     };
 
     return (
@@ -64,7 +72,7 @@ const CaseStudyContent: React.FC<{ caseStudy: Project['caseStudy'] }> = ({ caseS
         >
             <motion.div variants={sectionVariants}>
                 <h3 className="text-xl font-bold text-text-primary dark:text-white mb-3 flex items-center gap-3">
-                    <span className="bg-accent-start/10 p-2 rounded-md text-accent-start"><PuzzlePieceIcon /></span>
+                    <motion.span variants={iconVariants} className="bg-accent-start/10 p-2 rounded-md text-accent-start inline-block"><PuzzlePieceIcon /></motion.span>
                     The Problem
                 </h3>
                 <p className="text-text-secondary dark:text-[#94A3B8] leading-relaxed">{caseStudy.problem}</p>
@@ -72,7 +80,7 @@ const CaseStudyContent: React.FC<{ caseStudy: Project['caseStudy'] }> = ({ caseS
             
             <motion.div variants={sectionVariants}>
                 <h3 className="text-xl font-bold text-text-primary dark:text-white mb-3 flex items-center gap-3">
-                    <span className="bg-accent-start/10 p-2 rounded-md text-accent-start"><LightBulbIcon /></span>
+                    <motion.span variants={iconVariants} className="bg-accent-start/10 p-2 rounded-md text-accent-start inline-block"><LightBulbIcon /></motion.span>
                     The Solution
                 </h3>
                 <p className="text-text-secondary dark:text-[#94A3B8] leading-relaxed">{caseStudy.solution}</p>
@@ -80,17 +88,21 @@ const CaseStudyContent: React.FC<{ caseStudy: Project['caseStudy'] }> = ({ caseS
 
             <motion.div variants={sectionVariants}>
                 <h3 className="text-xl font-bold text-text-primary dark:text-white mb-3 flex items-center gap-3">
-                    <span className="bg-accent-start/10 p-2 rounded-md text-accent-start"><TrophyIcon /></span>
+                    <motion.span variants={iconVariants} className="bg-accent-start/10 p-2 rounded-md text-accent-start inline-block"><TrophyIcon /></motion.span>
                     The Result
                 </h3>
                 <p className="text-text-secondary dark:text-[#94A3B8] leading-relaxed mb-4">{caseStudy.result}</p>
                 {caseStudy.keyMetrics && (
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
                         {caseStudy.keyMetrics.map(metric => (
-                            <div key={metric.label} className="bg-primary dark:bg-[#0A0A14] p-4 rounded-lg border border-border-default dark:border-gray-700">
+                            <motion.div 
+                                key={metric.label} 
+                                className="bg-primary dark:bg-[#0A0A14] p-4 rounded-lg border border-border-default dark:border-gray-700 transition-all duration-300 hover:border-accent-start/50 hover:shadow-lg"
+                                whileHover={{ y: -5, scale: 1.03 }}
+                            >
                                 <p className="text-2xl font-bold bg-gradient-to-r from-accent-start to-accent-end bg-clip-text text-transparent">{metric.value}</p>
                                 <p className="text-sm text-text-secondary dark:text-[#94A3B8]">{metric.label}</p>
-                            </div>
+                            </motion.div>
                         ))}
                     </div>
                 )}

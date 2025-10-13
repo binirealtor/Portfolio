@@ -1,5 +1,6 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+// FIX: Add Transition to framer-motion import to fix typing issues with transition properties.
+import { motion, Transition } from 'framer-motion';
 
 const SplashScreen: React.FC = () => {
 
@@ -12,12 +13,14 @@ const SplashScreen: React.FC = () => {
     ]
   };
 
-  const bTransition = {
+  // FIX: Add Transition type to ensure correct type checking for animation properties.
+  const bTransition: Transition = {
     pathLength: { duration: 1.5, ease: "easeInOut" },
     fill: { duration: 0.5, ease: "easeIn", delay: 1.2 }
   };
 
-  const gTransition = {
+  // FIX: Add Transition type to ensure correct type checking for animation properties.
+  const gTransition: Transition = {
     pathLength: { duration: 1.5, ease: "easeInOut", delay: 0.3 },
     fill: { duration: 0.5, ease: "easeIn", delay: 1.5 }
   };

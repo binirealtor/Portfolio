@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { GoogleGenAI, Type } from "@google/genai";
-import { motion } from 'framer-motion';
+// FIX: Add Variants to framer-motion import to fix typing issues with transition properties.
+import { motion, Variants } from 'framer-motion';
 import type { Quote } from '../types';
 import { SparklesIcon } from './icons/IconComponents';
 
-const sectionVariants = {
+// FIX: Add Variants type to ensure correct type checking for animation properties.
+const sectionVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
     opacity: 1,
@@ -17,7 +19,8 @@ const sectionVariants = {
   }
 };
 
-const itemVariants = {
+// FIX: Add Variants type for consistency and type safety.
+const itemVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 }
 };
