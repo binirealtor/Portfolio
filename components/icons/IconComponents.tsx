@@ -46,41 +46,27 @@ export const LocationMarkerIcon: React.FC<{className?: string}> = ({className}) 
 
 // From Skills
 export const AnimationIcon: React.FC<{className?: string}> = ({className}) => (
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className || "w-full h-full"}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.82m5.84-2.56a12.022 12.022 0 00-11.68 0M15.59 14.37A12.021 12.021 0 0121.75 9.19v-4.82m-17.5 9.999a12.024 12.024 0 0111.68 0M2.25 9.19a12.024 12.024 0 005.84 5.18m-5.84-5.18h4.82m9.9 0h-4.82" />
-    </svg>
+    <img src="https://i.imgur.com/frV65ub.gif" alt="2D/3D Animation" className={`${className || "w-full h-full"} object-contain`} />
 );
 
 export const VideoEditingIcon: React.FC<{className?: string}> = ({className}) => (
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className || "w-full h-full"}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M6 20.25h12m-7.5-3.75v3.75m3.75-3.75v3.75m-7.5-12v12h12V6.75M6.375 6.375h11.25m-11.25 0V4.5a1.125 1.125 0 011.125-1.125h1.5a1.125 1.125 0 011.125 1.125v1.875m-3.75 0h3.75m-3.75 0V4.5a1.125 1.125 0 011.125-1.125h1.5a1.125 1.125 0 011.125 1.125v1.875m0 0h3.75m-3.75 0V4.5a1.125 1.125 0 011.125-1.125h1.5a1.125 1.125 0 011.125 1.125v1.875m0 0h3.75" />
-    </svg>
+    <img src="https://i.imgur.com/YCnWirS.gif" alt="Video Editing" className={`${className || "w-full h-full"} object-contain`} />
 );
 
 export const MotionGraphicsIcon: React.FC<{className?: string}> = ({className}) => (
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className || "w-full h-full"}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a.75.75 0 01-.75.75H3.75a.75.75 0 010-1.5h16.5a.75.75 0 01.75.75z" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12.75 3.75a.75.75 0 01.75.75v15a.75.75 0 01-1.5 0V4.5a.75.75 0 01.75-.75z" transform="rotate(45 12 12)" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12.75 3.75a.75.75 0 01.75.75v15a.75.75 0 01-1.5 0V4.5a.75.75 0 01.75-.75z" transform="rotate(-45 12 12)" />
-    </svg>
+    <img src="https://i.imgur.com/xpu31WS.gif" alt="Motion Graphics" className={`${className || "w-full h-full"} object-contain`} />
 );
 
 export const CharacterAnimationIcon: React.FC<{className?: string}> = ({className}) => (
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className || "w-full h-full"}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-    </svg>
+    <img src="https://i.imgur.com/RRnfmas.gif" alt="Character Animation" className={`${className || "w-full h-full"} object-contain`} />
 );
 
 export const SocialMediaIcon: React.FC<{className?: string}> = ({className}) => (
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className || "w-full h-full"}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
-    </svg>
+    <img src="https://i.imgur.com/ewheocG.gif" alt="Social Media & YouTube" className={`${className || "w-full h-full"} object-contain`} />
 );
 
 export const WeddingIcon: React.FC<{className?: string}> = ({className}) => (
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className || "w-full h-full"}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-    </svg>
+    <img src="https://i.imgur.com/6wS0eiB.gif" alt="Wedding & Event Videos" className={`${className || "w-full h-full"} object-contain`} />
 );
 
 // From Portfolio
