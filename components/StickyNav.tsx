@@ -69,10 +69,6 @@ const StickyNav: React.FC = () => {
                 : 'text-text-secondary dark:text-[#94A3B8] hover:bg-primary/50 dark:hover:bg-[#0A0A14]/50'
               }
             `}
-            onClick={(e) => {
-                e.preventDefault();
-                document.getElementById(item.id)?.scrollIntoView({ behavior: 'smooth' });
-            }}
             aria-label={`Go to ${item.label} section`}
             aria-current={activeSection === item.id ? 'page' : undefined}
           >

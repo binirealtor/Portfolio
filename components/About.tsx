@@ -47,9 +47,9 @@ const AnimatedCounter: React.FC<AnimatedCounterProps> = ({ from = 0, to, duratio
     return <span ref={nodeRef} />;
 }
 
-const StatCounter: React.FC<{ icon: React.ReactNode; value: number; label: string; suffix?: string; }> = ({ icon, value, label, suffix }) => (
+const StatCounter: React.FC<{ icon: React.ReactNode; value: number; label: string; suffix?: string; iconContainerClassName?: string; }> = ({ icon, value, label, suffix, iconContainerClassName }) => (
     <motion.div variants={itemVariants} className="text-center">
-        <div className="text-accent-start w-12 h-12 mx-auto mb-3">{icon}</div>
+        <div className={`text-accent-start mx-auto mb-3 ${iconContainerClassName || 'w-12 h-12'}`}>{icon}</div>
         <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-accent-start to-accent-end bg-clip-text text-transparent">
             <AnimatedCounter to={value} />{suffix}
         </div>
@@ -61,8 +61,8 @@ const StatCounter: React.FC<{ icon: React.ReactNode; value: number; label: strin
 const About: React.FC = () => {
     const stats = [
         { icon: <ClockIcon />, value: 8, suffix: "+", label: "Years of Experience" },
-        { icon: <BriefcaseIcon />, value: 10, suffix: "+", label: "Projects Completed" },
-        { icon: <TikTokIcon />, value: 580, suffix: "K+", label: "TikTok Followers" },
+        { icon: <BriefcaseIcon />, value: 50, suffix: "+", label: "Projects Completed" },
+        { icon: <TikTokIcon />, value: 560, suffix: "K+", label: "TikTok Followers" },
         { icon: <CheckCircleIcon />, value: 100, suffix: "%", label: "Job Success" },
     ];
 
@@ -84,7 +84,7 @@ const About: React.FC = () => {
            <img 
   src="https://i.imgur.com/B7qAtkF.jpeg" 
   alt="Binyam G." 
-  className="relative w-full h-full object-cover rounded-full border-4 border-secondary dark:border-[#11111F] shadow-lg"
+  className="relative w-full h-full object-cover rounded-full border-4 border-secondary dark:border-[#1111F] shadow-lg"
 />
 
 
@@ -96,7 +96,7 @@ const About: React.FC = () => {
                 I’m a passionate 2D/3D Animator & Video Editor with over 8 years of experience in motion graphics, VFX, and short-form content.
               </p>
               <p className="text-lg text-text-secondary dark:text-[#94A3B8] leading-relaxed">
-                I’ve grown my TikTok page to over 580K+ followers, so I know how to make content pop online.
+                I’ve grown my TikTok page to over 560K+ followers, so I know how to make content pop online.
               </p>
               <div className="flex items-center gap-3 text-text-primary dark:text-[#F1F5F9] mt-6">
                 <LocationMarkerIcon /> Addis Ababa, Ethiopia
@@ -107,10 +107,14 @@ const About: React.FC = () => {
 
         <motion.div 
             variants={sectionVariants} 
-            className="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-6 mt-20 pt-16 border-t border-border-default dark:border-[#11111F]"
+            className="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-6 mt-20 pt-16 border-t border-border-default dark:border-[#1111F] items-end"
         >
             {stats.map(stat => (
-                <StatCounter key={stat.label} {...stat} />
+                <StatCounter 
+                    key={stat.label} 
+                    {...stat} 
+                    iconContainerClassName={stat.label === "Job Success" ? "w-36 h-36" : "w-12 h-12"}
+                />
             ))}
         </motion.div>
       </div>

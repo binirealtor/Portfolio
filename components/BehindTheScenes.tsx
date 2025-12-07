@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { WrenchScrewdriverIcon } from './icons/IconComponents';
+import { EyeIcon } from './icons/IconComponents';
 
 const scenes = [
   {
@@ -51,7 +51,7 @@ const BehindTheScenes: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div variants={itemVariants} className="text-center">
             <h2 className="text-4xl font-bold text-text-primary dark:text-white mb-4 flex items-center justify-center gap-4">
-                <WrenchScrewdriverIcon className="w-10 h-10 text-accent-start" />
+                <EyeIcon className="w-10 h-10 text-accent-start" />
                 My Digital Workspace
             </h2>
             <p className="text-text-secondary dark:text-[#94A3B8] mb-12 max-w-2xl mx-auto">A look into the tools and techniques I use to bring ideas to life.</p>

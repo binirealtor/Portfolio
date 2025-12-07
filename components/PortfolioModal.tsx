@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import type { Project } from '../types';
 import BeforeAfterSlider from './BeforeAfterSlider';
-import { PuzzlePieceIcon, LightBulbIcon, TrophyIcon } from './icons/IconComponents';
+import { PuzzlePieceIcon, LightBulbIcon, TrophyIcon, TwitterIcon, FacebookIcon, ShareLinkedInIcon } from './icons/IconComponents';
 
 interface PortfolioModalProps {
   project: Project;
@@ -13,6 +13,14 @@ const PreviewContent: React.FC<{ project: Project }> = ({ project }) => {
     const videoUrlWithAutoplay = project.videoUrl
         ? `${project.videoUrl}${project.videoUrl.includes('?') ? '&' : '?'}autoplay=1&rel=0&modestbranding=1`
         : '';
+    
+    // Social Sharing URLs
+    const pageUrl = 'https://binyamg.com'; // Using a canonical URL for sharing
+    const shareText = `Check out this project "${project.title}" from Binyam G.'s portfolio!`;
+    const twitterUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(pageUrl)}&text=${encodeURIComponent(shareText)}`;
+    const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`;
+    const linkedInUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(pageUrl)}&title=${encodeURIComponent(project.title)}&summary=${encodeURIComponent(project.description)}`;
+
     return (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
             <div className="mb-6 bg-primary dark:bg-[#0A0A14] rounded-md">
@@ -41,6 +49,21 @@ const PreviewContent: React.FC<{ project: Project }> = ({ project }) => {
                     {project.tools.map(tool => (
                         <span key={tool} className="bg-primary dark:bg-[#0A0A14] text-text-secondary dark:text-[#94A3B8] font-medium py-1 px-3 rounded-full shadow-sm">{tool}</span>
                     ))}
+                </div>
+            </div>
+
+            <div className="mt-6 pt-6 border-t border-border-default dark:border-gray-700">
+                <h4 className="font-semibold text-text-primary dark:text-[#F1F5F9] mb-3">Share this project</h4>
+                <div className="flex items-center gap-4">
+                    <a href={twitterUrl} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#1DA1F2] transition-colors" data-cursor-variant="link" aria-label="Share on Twitter">
+                        <TwitterIcon className="w-6 h-6" />
+                    </a>
+                    <a href={facebookUrl} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#1877F2] transition-colors" data-cursor-variant="link" aria-label="Share on Facebook">
+                        <FacebookIcon className="w-6 h-6" />
+                    </a>
+                    <a href={linkedInUrl} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#0A66C2] transition-colors" data-cursor-variant="link" aria-label="Share on LinkedIn">
+                        <ShareLinkedInIcon className="w-6 h-6" />
+                    </a>
                 </div>
             </div>
         </motion.div>

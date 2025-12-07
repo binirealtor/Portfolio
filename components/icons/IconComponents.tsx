@@ -26,9 +26,7 @@ export const BriefcaseIcon: React.FC<{className?: string}> = ({className}) => (
 );
 
 export const CheckCircleIcon: React.FC<{className?: string}> = ({className}) => (
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className || "w-full h-full"}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-    </svg>
+    <img src="https://i.imgur.com/R9nWt0B.jpeg" alt="Job Success" className={`${className || "w-full h-full"} object-contain`} />
 );
 
 export const ClockIcon: React.FC<{className?: string}> = ({className}) => (
@@ -91,10 +89,7 @@ export const LightBulbIcon: React.FC<{className?: string}> = ({className}) => (
 );
 
 export const TrophyIcon: React.FC<{className?: string}> = ({className}) => (
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className || "w-full h-full"}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-6.75c-.622 0-1.125.504-1.125 1.125V18.75m9 0h-9m9 0a2.25 2.25 0 002.25-2.25v-1.5a2.25 2.25 0 00-2.25-2.25H15M6.75 18.75a2.25 2.25 0 01-2.25-2.25v-1.5a2.25 2.25 0 012.25-2.25H9" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 13.5V9A2.25 2.25 0 0111.25 6.75h1.5A2.25 2.25 0 0115 9v4.5" />
-    </svg>
+    <img src="https://i.imgur.com/W4gq1Xz.png" alt="Top Rated Freelancer" className={`${className || "w-full h-full"} object-contain`} />
 );
 
 
@@ -129,6 +124,14 @@ export const WrenchScrewdriverIcon: React.FC<{className?: string}> = ({className
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
     </svg>
 );
+
+export const EyeIcon: React.FC<{className?: string}> = ({className}) => (
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className || "w-6 h-6"}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+    </svg>
+);
+
 
 // From GearAndSetup
 export const CodeBracketSquareIcon: React.FC<{className?: string}> = ({className}) => (
@@ -174,13 +177,31 @@ export const HomeIcon: React.FC<{className?: string}> = ({className}) => (
 
 // For new UpworkProfile component
 export const StarIcon: React.FC<{className?: string}> = ({className}) => (
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className || "w-full h-full"}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.479.038.673.684.314 1.003l-4.062 3.693a.563.563 0 00-.162.59l1.18 5.43a.563.563 0 01-.816.62l-4.9-2.822a.563.563 0 00-.527 0l-4.9 2.822a.563.563 0 01-.816-.62l1.18-5.43a.563.563 0 00-.162-.59l-4.062-3.693c-.359-.319-.165-.965.314-1.003l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
-    </svg>
+    <img src="https://i.imgur.com/SjTt709.png" alt="5-Star Feedback" className={`${className || "w-full h-full"} object-contain`} />
 );
 
 export const ArrowTopRightOnSquareIcon: React.FC<{className?: string}> = ({className}) => (
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className || "w-6 h-6"}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-4.5 0V6.375c0-.621.504-1.125 1.125-1.125h4.125c.621 0 1.125.504 1.125 1.125V10.5m-7.5-4.125h7.5-7.5z" />
+    </svg>
+);
+
+// For Social Sharing in Portfolio Modal
+export const TwitterIcon: React.FC<{className?: string}> = ({className}) => (
+    <svg className={className || "w-6 h-6"} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+    </svg>
+);
+
+export const FacebookIcon: React.FC<{className?: string}> = ({className}) => (
+    <svg className={className || "w-6 h-6"} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
+    </svg>
+);
+
+// Using a different name to not conflict with the existing img-based LinkedInIcon
+export const ShareLinkedInIcon: React.FC<{className?: string}> = ({className}) => (
+    <svg className={className || "w-6 h-6"} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
     </svg>
 );

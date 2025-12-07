@@ -6,7 +6,7 @@ import { CompareArrowsIcon } from './icons/IconComponents';
 
 const portfolioData: Project[] = [
   { id: 1, type: 'standard', title: 'YouTube Channel Intro', description: 'Dynamic 3D intro animation for a popular tech channel.', thumbnailUrl: 'https://drive.google.com/uc?id=1X9k9dE-r0-sP_gI_h-U_yT_r_E_w_Q-lKj', tools: ['Blender', 'After Effects'], videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', category: '3D Animation' },
-  { id: 2, type: 'standard', title: 'TikTok Dance VFX', description: 'Viral dance video enhanced with scroll-stopping visual effects.', thumbnailUrl: 'https://drive.google.com/uc?id=1P0b1A_s-D_c_V-fG_h_J-k_L-m_N-o_Pq', tools: ['After Effects', 'Premiere Pro'], videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', category: 'VFX' },
+  { id: 2, type: 'standard', title: 'TikTok Dance VFX', description: 'Viral dance video enhanced with scroll-stopping visual effects.', thumbnailUrl: 'https://drive.google.com/uc?id=1P0b1A_s-D_c_V-fG_h_J-k_L-m_N-o_Pq', tools: ['After Effects', 'Premiere Pro'], videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', category: 'Short Form Videos' },
   { 
     id: 3, 
     type: 'standard', 
@@ -44,8 +44,8 @@ const portfolioData: Project[] = [
     }
   },
   { id: 5, type: 'standard', title: 'Character Animation Short', description: 'A short story brought to life with expressive 2D character animation.', thumbnailUrl: 'https://drive.google.com/uc?id=1-eD_c_B_a-Z_y_X-w_V_u-T_s_R_q-PoN', tools: ['After Effects', 'AI Tools'], videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', category: '2D Animation' },
-  { id: 6, type: 'standard', title: 'Social Media Ad Campaign', description: 'A series of short, punchy video ads for a new product launch.', thumbnailUrl: 'https://drive.google.com/uc?id=1-m_L-k_J-i_H_g_F-e_D_c-B_a_Z_y-Xw', tools: ['Premiere Pro', 'After Effects'], videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', category: 'Motion Graphics' },
-  { id: 7, type: 'standard', title: 'YouTube Channel Intro', description: 'Dynamic 3D intro animation for a popular tech channel.', thumbnailUrl: 'https://drive.google.com/uc?id=1X9k9dE-r0-sP_gI_h-U_yT_r_E_w_Q-lKj', tools: ['Blender', 'After Effects'], videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', category: '3D Animation' },
+  { id: 6, type: 'standard', title: 'Social Media Ad Campaign', description: 'A series of short, punchy video ads for a new product launch.', thumbnailUrl: 'https://drive.google.com/uc?id=1-m_L-k_J-i_H_g_F-e_D_c-B_a_Z_y-Xw', tools: ['Premiere Pro', 'After Effects'], videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', category: 'Short Form Videos' },
+  { id: 7, type: 'standard', title: 'Documentary Style YouTube Video', description: 'Editing and color grading for a mini-documentary about travel.', thumbnailUrl: 'https://drive.google.com/uc?id=1-m_L-k_J-i_H_g_F-e_D_c-B_a_Z_y-Xw', tools: ['Premiere Pro', 'DaVinci Resolve'], videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', category: 'YouTube Videos' },
 ];
 
 const containerVariants = {
@@ -114,7 +114,7 @@ const Portfolio: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [activeFilter, setActiveFilter] = useState('All');
 
-  const filters = ['All', '2D Animation', '3D Animation', 'VFX', 'Motion Graphics'];
+  const filters = ['All', '2D Animation', '3D Animation', 'YouTube Videos', 'Short Form Videos', 'Motion Graphics'];
 
   const filteredProjects = activeFilter === 'All'
     ? portfolioData

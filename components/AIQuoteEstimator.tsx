@@ -40,7 +40,7 @@ const AIQuoteEstimator: React.FC = () => {
         setError(null);
 
         try {
-            const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+            const ai = new GoogleGenAI({ apiKey: "AIzaSyCV6BCT45tOY6iQqWwXkvIvnRD3YzHDMJI" });
 
             const responseSchema = {
                 type: Type.OBJECT,

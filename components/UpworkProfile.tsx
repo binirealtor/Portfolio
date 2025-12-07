@@ -22,7 +22,7 @@ const itemVariants: Variants = {
 
 const StatCard: React.FC<{ icon: React.ReactNode; label: string; value: string; }> = ({ icon, label, value }) => (
     <div className="bg-secondary dark:bg-[#11111F] p-6 rounded-lg text-center flex flex-col items-center border border-border-default dark:border-[#0A0A14] hover:border-accent-start/30 transition-colors h-full">
-        <div className="text-accent-start w-10 h-10 mb-3">{icon}</div>
+        <div className="text-accent-start w-40 h-40 mb-3">{icon}</div>
         <p className="text-2xl font-bold text-text-primary dark:text-white">{value}</p>
         <p className="text-sm text-text-secondary dark:text-[#94A3B8] mt-1">{label}</p>
     </div>
@@ -41,7 +41,7 @@ const UpworkProfile: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.h2 variants={itemVariants} className="text-4xl font-bold text-text-primary dark:text-white flex items-center justify-center gap-4">
           <UpworkIcon className="w-10 h-10" />
-          Top Rated Plus on Upwork
+          Top Rated on Upwork
         </motion.h2>
         <motion.p variants={itemVariants} className="mt-4 text-lg text-text-secondary dark:text-[#94A3B8] max-w-2xl mx-auto">
           Consistently delivering high-quality work and maintaining excellent client relationships on the world's largest freelance marketplace.
@@ -55,10 +55,10 @@ const UpworkProfile: React.FC = () => {
                 <StatCard icon={<CheckCircleIcon />} value="100%" label="Job Success Score" />
             </motion.div>
             <motion.div variants={itemVariants}>
-                <StatCard icon={<TrophyIcon />} value="Top Rated" label="Plus Freelancer" />
+                <StatCard icon={<TrophyIcon />} value="Top Rated" label="Freelancer" />
             </motion.div>
             <motion.div variants={itemVariants}>
-                <StatCard icon={<StarIcon />} value="5-Star" label="Average Feedback" />
+                <StatCard icon={<StarIcon />} value="5-Star" label="All Feedback" />
             </motion.div>
         </motion.div>
 
