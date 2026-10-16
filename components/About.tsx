@@ -59,12 +59,7 @@ const StatCounter: React.FC<{ icon: React.ReactNode; value: number; label: strin
 
 
 const About: React.FC = () => {
-    const stats = [
-        { icon: <ClockIcon />, value: 8, suffix: "+", label: "Years of Experience" },
-        { icon: <BriefcaseIcon />, value: 50, suffix: "+", label: "Projects Completed" },
-        { icon: <TikTokIcon />, value: 560, suffix: "K+", label: "TikTok Followers" },
-        { icon: <CheckCircleIcon />, value: 100, suffix: "%", label: "Job Success" },
-    ];
+    const stats = [];
 
   return (
     <motion.section 
@@ -81,11 +76,7 @@ const About: React.FC = () => {
           <motion.div variants={itemVariants} className="lg:col-span-2">
             <div className="relative w-full max-w-xs mx-auto">
               <div className="absolute -inset-2.5 bg-gradient-to-r from-accent-start to-accent-end rounded-full blur-xl opacity-60 animate-pulse-slow"></div>
-           <img 
-  src="https://i.imgur.com/B7qAtkF.jpeg" 
-  alt="Binyam G." 
-  className="relative w-full h-full object-cover rounded-full border-4 border-secondary dark:border-[#1111F] shadow-lg"
-/>
+           <div className="relative flex items-center justify-center w-64 h-64 mx-auto rounded-full border-4 border-secondary dark:border-[#11111F] bg-gradient-to-br from-accent-start to-accent-end shadow-lg"><span className="text-6xl font-extrabold text-white">BG</span></div>
 
 
             </div>
@@ -93,31 +84,17 @@ const About: React.FC = () => {
           <motion.div variants={itemVariants} className="lg:col-span-3">
             <div className="space-y-6">
               <p className="text-lg text-text-secondary dark:text-[#94A3B8] leading-relaxed">
-                I’m a passionate 2D/3D Animator & Video Editor with over 8 years of experience in motion graphics, VFX, and short-form content.
+                I’m Betelhem Gobezie, a Video Editor & Faceless Content Specialist focused on clear storytelling, engaging pacing, and polished videos for online audiences.
               </p>
               <p className="text-lg text-text-secondary dark:text-[#94A3B8] leading-relaxed">
-                I’ve grown my TikTok page to over 560K+ followers, so I know how to make content pop online.
+                I work on faceless YouTube videos, documentary-style edits, animated explainers, and short-form videos for YouTube Shorts, TikTok, and Instagram Reels.
               </p>
-              <div className="flex items-center gap-3 text-text-primary dark:text-[#F1F5F9] mt-6">
-                <LocationMarkerIcon /> Addis Ababa, Ethiopia
-              </div>
+              
             </div>
           </motion.div>
         </div>
 
-        <motion.div 
-            variants={sectionVariants} 
-            className="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-6 mt-20 pt-16 border-t border-border-default dark:border-[#1111F] items-end"
-        >
-            {stats.map(stat => (
-                <StatCounter 
-                    key={stat.label} 
-                    {...stat} 
-                    iconContainerClassName={stat.label === "Job Success" ? "w-36 h-36" : "w-12 h-12"}
-                />
-            ))}
-        </motion.div>
-      </div>
+        </div>
       <style>{`
         @keyframes pulse-slow {
           50% { opacity: 0.8; transform: scale(1.05); }
