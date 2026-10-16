@@ -5,19 +5,13 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
-import Testimonials from './components/Testimonials';
-import AIQuoteEstimator from './components/AIQuoteEstimator';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollToTopButton from './components/ScrollToTopButton';
 import CustomCursor from './components/CustomCursor';
 import StickyNav from './components/StickyNav';
 import SplashScreen from './components/SplashScreen';
-import BehindTheScenes from './components/BehindTheScenes';
-import GearAndSetup from './components/GearAndSetup';
 import FAQ from './components/FAQ';
-import ReferralBanner from './components/ReferralBanner';
-import UpworkProfile from './components/UpworkProfile';
 
 const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -80,12 +74,6 @@ const App: React.FC = () => {
         <About />
         <Skills />
         <Portfolio />
-        <BehindTheScenes />
-        <GearAndSetup />
-        <ReferralBanner />
-        <Testimonials />
-        <UpworkProfile />
-        <AIQuoteEstimator />
         <FAQ />
         <Contact />
       </main>
