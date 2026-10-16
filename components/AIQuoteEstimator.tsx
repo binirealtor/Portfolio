@@ -40,7 +40,7 @@ const AIQuoteEstimator: React.FC = () => {
         setError(null);
 
         try {
-            const ai = new GoogleGenAI({ apiKey: "AIzaSyCV6BCT45tOY6iQqWwXkvIvnRD3YzHDMJI" });
+            const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY || "" });
 
             const responseSchema = {
                 type: Type.OBJECT,
@@ -63,7 +63,7 @@ const AIQuoteEstimator: React.FC = () => {
                 required: ["estimatedCostRange", "timelineEstimate", "breakdown", "assumptions"]
             };
 
-            const systemInstruction = `You are an expert project estimator for a freelance 2D/3D Animator and Video Editor named Binyam G. Your task is to provide a cost and timeline estimate based on a client's project description. Binyam is a top-rated freelancer with 8+ years of experience, specializing in motion graphics, VFX, and short-form content. His typical rates are around $50/hour. A simple 30-second motion graphic might take 10-15 hours, while a complex 1-minute 3D animation could take 40+ hours. Base your estimate on the complexity, length, and style mentioned in the description. Always provide a cost range, a timeline, a breakdown of services, and any assumptions you made. Be realistic and professional. Respond only in the requested JSON format.`;
+            const systemInstruction = `You are an assistant that drafts preliminary estimates for Betelhem Gobezie, a video editor and faceless content specialist. Do not claim certifications, ratings, years of experience, follower counts, or rates unless provided in the current project details. Ask for missing scope details when needed. A simple 30-second motion graphic might take 10-15 hours, while a complex 1-minute 3D animation could take 40+ hours. Base your estimate on the complexity, length, and style mentioned in the description. Always provide a cost range, a timeline, a breakdown of services, and any assumptions you made. Be realistic and professional. Respond only in the requested JSON format.`;
 
             const response = await ai.models.generateContent({
                 model: "gemini-2.5-flash",
