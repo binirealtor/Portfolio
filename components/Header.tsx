@@ -42,9 +42,6 @@ const Header: React.FC = () => {
     { href: '#about', label: 'About' },
     { href: '#skills', label: 'Skills' },
     { href: '#portfolio', label: 'Portfolio' },
-    { href: '#testimonials', label: 'Testimonials' },
-    { href: '#upwork', label: 'Upwork' },
-    { href: '#quote', label: 'AI Quote' },
     { href: '#contact', label: 'Contact' },
   ];
   
