@@ -3,7 +3,7 @@ import React from 'react';
 import { motion, Variants } from 'framer-motion';
 
 const testimonialsData: Testimonial[] = [
-    { id: 1, quote: "Fast delivery, clean animation, scroll-stopping edits! Binyam is a true professional and a pleasure to work with.", author: 'Jane Doe', company: 'Tech Startup CEO' },
+    { id: 1, quote: "Fast delivery, clean animation, scroll-stopping edits! Betelhem is a true professional and a pleasure to work with.", author: 'Jane Doe', company: 'Tech Startup CEO' },
     { id: 2, quote: "The quality of the motion graphics exceeded our expectations. Our engagement rates have skyrocketed since we started using his videos.", author: 'John Smith', company: 'Marketing Director' },
     { id: 3, quote: "Incredibly creative and attentive to feedback. He took our rough concept and turned it into a masterpiece. Highly recommend!", author: 'Emily White', company: 'Content Creator' },
 ];
