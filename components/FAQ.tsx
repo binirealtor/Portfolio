@@ -13,7 +13,7 @@ const faqData = [
   },
   {
     question: "How do you handle pricing?",
-    answer: "I offer both hourly rates (~$50/hr) and fixed-price project quotes. For larger projects, a fixed price is often best. Use the AI Estimator for a preliminary idea, then contact me for a detailed, formal quote tailored to your specific needs."
+    answer: "I can discuss an hourly rate or a fixed-price quote depending on the project's scope. Confirm the final rate and deliverables with me before work begins. For larger projects, a fixed price is often best. Use the AI Estimator for a preliminary idea, then contact me for a detailed, formal quote tailored to your specific needs."
   },
   {
     question: "In what format will I receive the final files?",
