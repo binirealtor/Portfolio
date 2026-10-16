@@ -5,54 +5,67 @@ import PortfolioModal from './PortfolioModal';
 import { CompareArrowsIcon } from './icons/IconComponents';
 
 const portfolioData: Project[] = [
-  { id: 1, type: 'standard', title: 'YouTube Channel Intro', description: 'Dynamic 3D intro animation for a popular tech channel.', thumbnailUrl: 'https://drive.google.com/uc?id=1X9k9dE-r0-sP_gI_h-U_yT_r_E_w_Q-lKj', tools: ['Blender', 'After Effects'], videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', category: '3D Animation' },
-  { id: 2, type: 'standard', title: 'TikTok Dance VFX', description: 'Viral dance video enhanced with scroll-stopping visual effects.', thumbnailUrl: 'https://drive.google.com/uc?id=1P0b1A_s-D_c_V-fG_h_J-k_L-m_N-o_Pq', tools: ['After Effects', 'Premiere Pro'], videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', category: 'Short Form Videos' },
-  { 
-    id: 3, 
-    type: 'standard', 
-    title: 'Corporate Explainer Video', 
-    description: 'Clean 2D motion graphics video explaining a complex service.', 
-    thumbnailUrl: 'https://drive.google.com/uc?id=1_R_e_W-q_T_y_U-i_O_p_A-s_D-f_G-hJ', 
-    tools: ['After Effects'], 
-    videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', 
+  {
+    id: 1,
+    type: 'standard',
+    title: '2D Whiteboard Animation & Explainer Video',
+    description: 'This project showcases 2D whiteboard animation designed to communicate ideas through engaging illustrations and visual storytelling. The video presents information in a clear and accessible format, making it suitable for educational content, business presentations, marketing videos, and explainer videos.',
+    thumbnailUrl: 'https://img.youtube.com/vi/jZdJpO2wnsg/hqdefault.jpg',
+    tools: ['2D Animation', 'Explainer Video', 'Character Animation'],
+    videoUrl: 'https://www.youtube.com/embed/jZdJpO2wnsg',
     category: '2D Animation',
-    caseStudy: {
-      problem: "A B2B SaaS company struggled to explain their complex software's value proposition on their website. Potential customers were dropping off, confused by text-heavy pages.",
-      solution: "I developed a 90-second 2D animated explainer video. Using clean visuals, branded characters, and kinetic typography, we distilled the core features into an engaging and easy-to-understand narrative. The story followed a relatable customer persona overcoming common pain points with the software.",
-      result: "The video, placed prominently on the homepage, became a cornerstone of their marketing. It directly addressed user confusion and provided a clear, concise overview of the product's benefits, leading to better engagement and more qualified leads.",
-      keyMetrics: [
-        { label: 'Increase in Demo Sign-ups', value: '+35%' },
-        { label: 'Reduction in Bounce Rate', value: '-20%' },
-        { label: 'Average Time on Page', value: '+70%' },
-      ]
-    }
   },
-  { 
-    id: 4, 
-    type: 'before-after', 
-    title: 'Wedding Highlight Film', 
-    description: 'Cinematic editing and color grading to create a warm, emotional tone for a wedding highlight film.', 
-    beforeImageUrl: 'https://drive.google.com/uc?id=1-kL_j_I-h_G_f-E_d_C-b_A-z_Y_x-Wv', 
-    afterImageUrl: 'https://drive.google.com/uc?id=1-u_T-s_R_q-P_o_N-m_L-k_J_i_H-gF', 
-    tools: ['Premiere Pro', 'DaVinci Resolve'], 
-    videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', 
-    category: 'Motion Graphics',
-    caseStudy: {
-      problem: "A client provided raw, unedited footage from their wedding day. The clips were shot on different cameras, with inconsistent lighting and flat color profiles. The challenge was to transform this disparate footage into a cohesive, cinematic, and emotionally resonant story.",
-      solution: "My process involved meticulous log-and-sync of all footage, followed by crafting a narrative that highlighted the day's most emotional moments. I performed advanced color correction and grading to establish a warm, romantic visual tone. Sound design, including music selection and audio sweetening, was crucial in elevating the film's emotional impact.",
-      result: "The final highlight film was delivered as a cherished cinematic keepsake. The 'before-and-after' comparison starkly demonstrates the transformative power of professional editing and color grading, turning raw footage into a polished, storytelling-driven piece.",
-    }
+  {
+    id: 2,
+    type: 'standard',
+    title: '2D Animated SaaS Explainer Video & Motion Graphics',
+    description: 'This project showcases an animated explainer video designed to present a digital product through engaging visuals and clear storytelling. The presentation style is suitable for SaaS companies, startups, product demonstrations, and promotional content.',
+    thumbnailUrl: 'https://img.youtube.com/vi/QEB6_R6dPnM/hqdefault.jpg',
+    tools: ['2D Animation', 'Explainer Video', 'Motion Graphics'],
+    videoUrl: 'https://www.youtube.com/embed/QEB6_R6dPnM',
+    category: '2D Animation',
   },
-  { id: 5, type: 'standard', title: 'Character Animation Short', description: 'A short story brought to life with expressive 2D character animation.', thumbnailUrl: 'https://drive.google.com/uc?id=1-eD_c_B_a-Z_y_X-w_V_u-T_s_R_q-PoN', tools: ['After Effects', 'AI Tools'], videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', category: '2D Animation' },
-  { id: 6, type: 'standard', title: 'Social Media Ad Campaign', description: 'A series of short, punchy video ads for a new product launch.', thumbnailUrl: 'https://drive.google.com/uc?id=1-m_L-k_J-i_H_g_F-e_D_c-B_a_Z_y-Xw', tools: ['Premiere Pro', 'After Effects'], videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', category: 'Short Form Videos' },
-  { id: 7, type: 'standard', title: 'Documentary Style YouTube Video', description: 'Editing and color grading for a mini-documentary about travel.', thumbnailUrl: 'https://drive.google.com/uc?id=1-m_L-k_J-i_H_g_F-e_D_c-B_a_Z_y-Xw', tools: ['Premiere Pro', 'DaVinci Resolve'], videoUrl: 'https://www.youtube.com/embed/6_p_wQu0Nts', category: 'YouTube Videos' },
-  { id: 8, type: 'standard', title: '2D Whiteboard Animation & Explainer Video', description: '2D whiteboard animation that communicates ideas through illustrated visuals and clear storytelling. Suitable for educational, business, marketing, and explainer content.', thumbnailUrl: 'https://img.youtube.com/vi/jZdJpO2wnsg/hqdefault.jpg', tools: ['2D Animation', 'Whiteboard Animation', 'Video Editing'], videoUrl: 'https://www.youtube.com/embed/jZdJpO2wnsg', category: '2D Animation' },
-  { id: 9, type: 'standard', title: '2D Animated SaaS Explainer Video & Motion Graphics', description: 'An animated explainer presentation for a digital product, using engaging visuals and clear storytelling. Suitable for SaaS, startups, product demonstrations, and promotional content.', thumbnailUrl: 'https://img.youtube.com/vi/QEB6_R6dPnM/hqdefault.jpg', tools: ['2D Animation', 'Motion Graphics', 'Explainer Video'], videoUrl: 'https://www.youtube.com/embed/QEB6_R6dPnM', category: '2D Animation' },
-  { id: 10, type: 'standard', title: '2D Animation & Cartoon Video Production', description: '2D animation focused on visual storytelling, engaging scenes, and a cohesive animated presentation for YouTube, education, promotion, and digital storytelling.', thumbnailUrl: 'https://img.youtube.com/vi/usgb7P5nceg/hqdefault.jpg', tools: ['2D Animation', 'Cartoon Animation', 'Video Editing'], videoUrl: 'https://www.youtube.com/embed/usgb7P5nceg', category: '2D Animation' },
-  { id: 11, type: 'standard', title: '2D Cartoon Animation & Animated Video Editing', description: 'A 2D cartoon animation presentation with structured storytelling and engaging visuals, suitable for animated stories, educational videos, YouTube channels, and online entertainment.', thumbnailUrl: 'https://img.youtube.com/vi/263I4icMeUo/hqdefault.jpg', tools: ['2D Animation', 'Cartoon Animation', 'Visual Storytelling'], videoUrl: 'https://www.youtube.com/embed/263I4icMeUo', category: '2D Animation' },
-  { id: 12, type: 'standard', title: '2D Animated Storytelling & Cartoon Video Production', description: '2D animated storytelling with engaging scenes, narrative flow, and consistent visuals for animated stories, cartoon videos, educational content, and YouTube projects.', thumbnailUrl: 'https://img.youtube.com/vi/nyjqVnL_j6s/hqdefault.jpg', tools: ['2D Animation', 'Cartoon Animation', 'Storytelling'], videoUrl: 'https://www.youtube.com/embed/nyjqVnL_j6s', category: '2D Animation' },
-  { id: 13, type: 'standard', title: '2D Cartoon Animation for YouTube & Digital Content', description: '2D animated video content centered on visual storytelling and an engaging presentation for cartoon YouTube channels, explainers, educational videos, and digital media.', thumbnailUrl: 'https://img.youtube.com/vi/GZrBbg1PDuQ/hqdefault.jpg', tools: ['2D Animation', 'Cartoon Animation', 'YouTube Video'], videoUrl: 'https://www.youtube.com/embed/GZrBbg1PDuQ', category: '2D Animation' },
-];
+  {
+    id: 3,
+    type: 'standard',
+    title: '2D Animation & Cartoon Video Production',
+    description: 'This project showcases 2D animation focused on visual storytelling, engaging scenes, and a cohesive animated presentation. This style can be suitable for animated YouTube videos, educational projects, promotional content, and digital storytelling.',
+    thumbnailUrl: 'https://img.youtube.com/vi/usgb7P5nceg/hqdefault.jpg',
+    tools: ['2D Animation', 'Cartoon Animation', 'Character Animation'],
+    videoUrl: 'https://www.youtube.com/embed/usgb7P5nceg',
+    category: '2D Animation',
+  },
+  {
+    id: 4,
+    type: 'standard',
+    title: '2D Cartoon Animation & Animated Video Editing',
+    description: 'This project highlights 2D cartoon animation presented through engaging visuals and structured storytelling. The focus is on clear scene progression, consistent visual presentation, and smooth pacing. This animation format is suitable for cartoon YouTube channels, animated stories, educational videos, and online entertainment.',
+    thumbnailUrl: 'https://img.youtube.com/vi/263I4icMeUo/hqdefault.jpg',
+    tools: ['2D Animation', 'Cartoon Animation', 'Character Animation'],
+    videoUrl: 'https://www.youtube.com/embed/263I4icMeUo',
+    category: '2D Animation',
+  },
+  {
+    id: 5,
+    type: 'standard',
+    title: '2D Animated Storytelling & Cartoon Video Production',
+    description: 'This project showcases 2D animation designed to present content through visual storytelling and engaging animated scenes. The emphasis is on narrative flow, consistent visuals, and well-paced scene transitions. This style is suitable for animated stories, cartoon videos, educational content, and YouTube animation projects.',
+    thumbnailUrl: 'https://img.youtube.com/vi/nyjqVnL_j6s/hqdefault.jpg',
+    tools: ['2D Animation', 'Cartoon Animation', 'Character Animation'],
+    videoUrl: 'https://www.youtube.com/embed/nyjqVnL_j6s',
+    category: '2D Animation',
+  },
+  {
+    id: 6,
+    type: 'standard',
+    title: '2D Cartoon Animation for YouTube & Digital Content',
+    description: 'This project showcases 2D animated video content focused on visual storytelling and an engaging presentation. This type of content can be suitable for cartoon YouTube channels, animated explainers, educational videos, and digital media projects.',
+    thumbnailUrl: 'https://img.youtube.com/vi/GZrBbg1PDuQ/hqdefault.jpg',
+    tools: ['2D Animation', 'Cartoon Animation', 'Explainer Video'],
+    videoUrl: 'https://www.youtube.com/embed/GZrBbg1PDuQ',
+    category: '2D Animation',
+  },
+];;
 
 const containerVariants = {
   hidden: { opacity: 0 },
