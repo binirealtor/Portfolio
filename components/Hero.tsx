@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowDownTrayIcon } from './icons/IconComponents';
+
 
 const Hero: React.FC = () => {
   return (
@@ -21,19 +21,19 @@ const Hero: React.FC = () => {
         <h1 
           className="text-4xl md:text-7xl font-extrabold text-white tracking-tight animate-fade-in-up"
         >
-          Binyam G.
+          Betelhem Gobezie
         </h1>
         <h2 
           className="text-2xl md:text-4xl font-semibold bg-gradient-to-r from-accent-start to-accent-end bg-clip-text text-transparent mt-4 animate-fade-in-up"
           style={{ animationDelay: '200ms' }}
         >
-          Animator & Video Editor
+          Video Editor & Faceless Content Specialist
         </h2>
         <p 
           className="mt-6 max-w-2xl mx-auto text-lg text-slate-300 dark:text-[#94A3B8] animate-fade-in-up"
           style={{ animationDelay: '400ms' }}
         >
-          Bringing your vision to life with captivating motion graphics, VFX, and cinematic editing.
+          I create engaging faceless YouTube videos, documentary-style stories, and short-form content for digital platforms.
         </p>
         <div 
           className="mt-8 flex flex-wrap gap-4 justify-center animate-fade-in-up"
@@ -47,15 +47,6 @@ const Hero: React.FC = () => {
           </a>
           <a href="#contact" className="bg-transparent text-white font-bold py-3 px-8 rounded-full border-2 border-white/50 hover:border-white transition-all duration-300 transform hover:scale-105" data-cursor-variant="link">
             Get in Touch
-          </a>
-          <a 
-            href="/Binyam_G_Resume.pdf" 
-            download 
-            className="bg-transparent text-white font-bold py-3 px-8 rounded-full border-2 border-white/50 hover:border-white transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2" 
-            data-cursor-variant="link"
-          >
-            <ArrowDownTrayIcon className="w-5 h-5" />
-            Download CV
           </a>
         </div>
       </div>
