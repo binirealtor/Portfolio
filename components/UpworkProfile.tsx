@@ -41,10 +41,10 @@ const UpworkProfile: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.h2 variants={itemVariants} className="text-4xl font-bold text-text-primary dark:text-white flex items-center justify-center gap-4">
           <UpworkIcon className="w-10 h-10" />
-          Top Rated on Upwork
+          Find me on Upwork
         </motion.h2>
         <motion.p variants={itemVariants} className="mt-4 text-lg text-text-secondary dark:text-[#94A3B8] max-w-2xl mx-auto">
-          Consistently delivering high-quality work and maintaining excellent client relationships on the world's largest freelance marketplace.
+          View my Upwork profile for current details about my services and availability.
         </motion.p>
         
         <motion.div 
@@ -52,19 +52,19 @@ const UpworkProfile: React.FC = () => {
             className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 max-w-4xl mx-auto"
         >
             <motion.div variants={itemVariants}>
-                <StatCard icon={<CheckCircleIcon />} value="100%" label="Job Success Score" />
+                <StatCard icon={<CheckCircleIcon />} value="Video" label="Editing" />
             </motion.div>
             <motion.div variants={itemVariants}>
-                <StatCard icon={<TrophyIcon />} value="Top Rated" label="Freelancer" />
+                <StatCard icon={<TrophyIcon />} value="Faceless" label="Content" />
             </motion.div>
             <motion.div variants={itemVariants}>
-                <StatCard icon={<StarIcon />} value="5-Star" label="All Feedback" />
+                <StatCard icon={<StarIcon />} value="2D" label="Animation" />
             </motion.div>
         </motion.div>
 
         <motion.div variants={itemVariants} className="mt-12">
             <a 
-                href="https://www.upwork.com/freelancers/~01edea4e134015fee8" 
+                href="https://www.upwork.com/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="relative inline-flex items-center justify-center p-0.5 rounded-full font-bold text-white group" 
