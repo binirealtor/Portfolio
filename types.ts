@@ -8,6 +8,7 @@ export interface Skill {
 export interface Project {
   id: number;
   title: string;
+  role: string;
   description: string;
   tools: string[];
   category: string;
