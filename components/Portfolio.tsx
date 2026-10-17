@@ -9,6 +9,7 @@ const portfolioData: Project[] = [
     id: 1,
     type: 'standard',
     title: '2D Whiteboard Animation & Explainer Video',
+    role: '2D Animator & Video Editor',
     description: 'This project showcases 2D whiteboard animation designed to communicate ideas through engaging illustrations and visual storytelling. The video presents information in a clear and accessible format, making it suitable for educational content, business presentations, marketing videos, and explainer videos.',
     thumbnailUrl: 'https://img.youtube.com/vi/jZdJpO2wnsg/hqdefault.jpg',
     tools: ['2D Animation', 'Explainer Video', 'Character Animation'],
@@ -19,6 +20,7 @@ const portfolioData: Project[] = [
     id: 2,
     type: 'standard',
     title: '2D Animated SaaS Explainer Video & Motion Graphics',
+    role: '2D Animator & Video Editor',
     description: 'This project showcases an animated explainer video designed to present a digital product through engaging visuals and clear storytelling. The presentation style is suitable for SaaS companies, startups, product demonstrations, and promotional content.',
     thumbnailUrl: 'https://img.youtube.com/vi/QEB6_R6dPnM/hqdefault.jpg',
     tools: ['2D Animation', 'Explainer Video', 'Motion Graphics'],
@@ -29,6 +31,7 @@ const portfolioData: Project[] = [
     id: 3,
     type: 'standard',
     title: '2D Animation & Cartoon Video Production',
+    role: '2D Animator & Video Editor',
     description: 'This project showcases 2D animation focused on visual storytelling, engaging scenes, and a cohesive animated presentation. This style can be suitable for animated YouTube videos, educational projects, promotional content, and digital storytelling.',
     thumbnailUrl: 'https://img.youtube.com/vi/usgb7P5nceg/hqdefault.jpg',
     tools: ['2D Animation', 'Cartoon Animation', 'Character Animation'],
@@ -39,6 +42,7 @@ const portfolioData: Project[] = [
     id: 4,
     type: 'standard',
     title: '2D Cartoon Animation & Animated Video Editing',
+    role: '2D Animator & Video Editor',
     description: 'This project highlights 2D cartoon animation presented through engaging visuals and structured storytelling. The focus is on clear scene progression, consistent visual presentation, and smooth pacing. This animation format is suitable for cartoon YouTube channels, animated stories, educational videos, and online entertainment.',
     thumbnailUrl: 'https://img.youtube.com/vi/263I4icMeUo/hqdefault.jpg',
     tools: ['2D Animation', 'Cartoon Animation', 'Character Animation'],
@@ -49,6 +53,7 @@ const portfolioData: Project[] = [
     id: 5,
     type: 'standard',
     title: '2D Animated Storytelling & Cartoon Video Production',
+    role: '2D Animator & Video Editor',
     description: 'This project showcases 2D animation designed to present content through visual storytelling and engaging animated scenes. The emphasis is on narrative flow, consistent visuals, and well-paced scene transitions. This style is suitable for animated stories, cartoon videos, educational content, and YouTube animation projects.',
     thumbnailUrl: 'https://img.youtube.com/vi/nyjqVnL_j6s/hqdefault.jpg',
     tools: ['2D Animation', 'Cartoon Animation', 'Character Animation'],
@@ -59,6 +64,7 @@ const portfolioData: Project[] = [
     id: 6,
     type: 'standard',
     title: '2D Cartoon Animation for YouTube & Digital Content',
+    role: '2D Animator & Video Editor',
     description: 'This project showcases 2D animated video content focused on visual storytelling and an engaging presentation. This type of content can be suitable for cartoon YouTube channels, animated explainers, educational videos, and digital media projects.',
     thumbnailUrl: 'https://img.youtube.com/vi/GZrBbg1PDuQ/hqdefault.jpg',
     tools: ['2D Animation', 'Cartoon Animation', 'Explainer Video'],
@@ -108,8 +114,8 @@ const ProjectCard: React.FC<{ project: Project; onProjectClick: (project: Projec
         )}
 
         <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-            <div className="flex justify-between items-center transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-out delay-200">
-                <h3 className="text-xl font-bold">
+            <div className="flex justify-between items-center">
+                <h3 className="text-lg sm:text-xl font-bold leading-snug drop-shadow-md">
                     {project.title}
                 </h3>
                 {project.caseStudy && (
