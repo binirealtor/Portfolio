@@ -15,8 +15,8 @@ const PreviewContent: React.FC<{ project: Project }> = ({ project }) => {
         : '';
     
     // Social Sharing URLs
-    const pageUrl = 'https://binyamg.com'; // Using a canonical URL for sharing
-    const shareText = `Check out this project "${project.title}" from Binyam G.'s portfolio!`;
+    const pageUrl = 'https://betelhemgobezie.vercel.app/';
+    const shareText = `Check out this project "${project.title}" from Betelhem Gobezie's portfolio!`;
     const twitterUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(pageUrl)}&text=${encodeURIComponent(shareText)}`;
     const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`;
     const linkedInUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(pageUrl)}&title=${encodeURIComponent(project.title)}&summary=${encodeURIComponent(project.description)}`;
@@ -43,9 +43,10 @@ const PreviewContent: React.FC<{ project: Project }> = ({ project }) => {
             </div>
 
             <div>
+                <p className="text-sm font-semibold uppercase tracking-wide text-accent-start mb-2">Your role: {project.role}</p>
                 <p className="text-lg text-text-secondary dark:text-[#94A3B8] mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-3 items-center">
-                    <span className="font-semibold text-text-primary dark:text-[#F1F5F9]">Tools Used:</span>
+                    <span className="font-semibold text-text-primary dark:text-[#F1F5F9]">Relevant skills:</span>
                     {project.tools.map(tool => (
                         <span key={tool} className="bg-primary dark:bg-[#0A0A14] text-text-secondary dark:text-[#94A3B8] font-medium py-1 px-3 rounded-full shadow-sm">{tool}</span>
                     ))}
